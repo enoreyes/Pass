@@ -18,7 +18,7 @@ class DemoCell: FoldingCell {
     @IBOutlet weak var openBarColo: UIView!
     @IBOutlet weak var bigBGColor: UIView!
     @IBOutlet weak var closedBGColor: UIView!
-    
+    @IBOutlet weak var userImage: UIImageView!
     @IBOutlet weak var descLabel: UILabel!
     
     var titleText = ""
@@ -27,8 +27,10 @@ class DemoCell: FoldingCell {
     didSet {
       closeNumberLabel.text = titleText
       openNumberLabel.text = titleText
+        
     }
   }
+    
   
   override func awakeFromNib() {
     foregroundView.layer.cornerRadius = 10

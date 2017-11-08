@@ -651,6 +651,7 @@
                                     <outlet property="openBarColo" destination="o36-zd-BZb" id="RFw-Yy-5U6"/>
                                     <outlet property="openNumberLabel" destination="7eb-NE-XLS" id="mrT-hs-afw"/>
                                     <outlet property="openTitle" destination="7eb-NE-XLS" id="I3U-bS-tuR"/>
+                                    <outlet property="userImage" destination="Nm8-JU-yEj" id="E3n-id-7K8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -666,10 +667,10 @@
             </objects>
             <point key="canvasLocation" x="41.600000000000001" y="295.50224887556226"/>
         </scene>
-        <!--View Controller-->
+        <!--Code View Controller-->
         <scene sceneID="cYb-GK-6AR">
             <objects>
-                <viewController id="bIJ-Xi-FAZ" sceneMemberID="viewController">
+                <viewController id="bIJ-Xi-FAZ" customClass="QRCodeViewController" customModule="Pass" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S5p-x1-YUT"/>
                         <viewControllerLayoutGuide type="bottom" id="Jvz-HX-iI7"/>
@@ -678,9 +679,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.59999999999999998" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-Cs-Uj1">
+                            <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-Cs-Uj1">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.19376453760000001" green="0.50850099329999998" blue="0.85232251879999998" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11T-8z-aNn">
@@ -693,7 +693,7 @@
                                             <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="0cn-rv-Emg" kind="presentation" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="IH7-Bw-Ntx"/>
+                                            <segue destination="FYs-0Q-qsh" kind="unwind" unwindAction="unwindToPassesWithSegue:" id="Sk5-w7-M6g"/>
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qr" translatesAutoresizingMaskIntoConstraints="NO" id="Ano-GJ-Txe">
@@ -733,12 +733,20 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Jvz-HX-iI7" firstAttribute="top" secondItem="0Gi-Cs-Uj1" secondAttribute="bottom" id="EkD-Bt-HAL"/>
+                            <constraint firstItem="0Gi-Cs-Uj1" firstAttribute="top" secondItem="VYn-87-vjb" secondAttribute="top" id="INZ-Id-nx3"/>
                             <constraint firstItem="11T-8z-aNn" firstAttribute="centerX" secondItem="VYn-87-vjb" secondAttribute="centerX" id="OC9-KK-NkC"/>
+                            <constraint firstAttribute="trailing" secondItem="0Gi-Cs-Uj1" secondAttribute="trailing" id="PVR-R9-B4D"/>
                             <constraint firstItem="11T-8z-aNn" firstAttribute="centerY" secondItem="VYn-87-vjb" secondAttribute="centerY" id="bi3-WJ-7qD"/>
+                            <constraint firstItem="0Gi-Cs-Uj1" firstAttribute="leading" secondItem="VYn-87-vjb" secondAttribute="leading" id="l4a-TQ-LWA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="qrCode" destination="Ano-GJ-Txe" id="tWO-U5-mMu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vyl-aM-tSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="FYs-0Q-qsh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="992.79999999999995" y="295.50224887556226"/>
         </scene>

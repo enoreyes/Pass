@@ -22,6 +22,7 @@
 		B8FAF510987BEF19CBD716D2 /* Pods_PassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C1051E8CBAADEDB2C237DA /* Pods_PassTests.framework */; };
 		CCCD978508D8A29CD0EBA6C9 /* Pods_Pass_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5C350EB8573A3423D91E74 /* Pods_Pass_Demo.framework */; };
 		F43259DF1FAFD39200C29C8B /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43259DE1FAFD39200C29C8B /* Pass.swift */; };
+		F43259E11FB2B4E700C29C8B /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43259E01FB2B4E700C29C8B /* QRCodeViewController.swift */; };
 		F4B78F921FA1C8840009942B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B78F911FA1C8840009942B /* Colors.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		E4C1051E8CBAADEDB2C237DA /* Pods_PassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9BB1077B1F009E383AB1341 /* Pods-Pass-DemoObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pass-DemoObjc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pass-DemoObjc/Pods-Pass-DemoObjc.debug.xcconfig"; sourceTree = "<group>"; };
 		F43259DE1FAFD39200C29C8B /* Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
+		F43259E01FB2B4E700C29C8B /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		F4B78F911FA1C8840009942B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -218,6 +220,7 @@
 			isa = PBXGroup;
 			children = (
 				9D57F32E1EDC7A850004599F /* MainTableViewController.swift */,
+				F43259E01FB2B4E700C29C8B /* QRCodeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -615,6 +618,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43259E11FB2B4E700C29C8B /* QRCodeViewController.swift in Sources */,
 				F43259DF1FAFD39200C29C8B /* Pass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
