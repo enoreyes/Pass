@@ -17,7 +17,6 @@ class QRCodeViewController: UIViewController {
         super.viewDidLoad()
 
         let image = generateQRCode(from: "Hello")
-        
         qrCode.image = image
         
     }

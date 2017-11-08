@@ -20,7 +20,6 @@
 		9D57F3351EDC7AD80004599F /* Pass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8499D8851D0054A8004B5B37 /* Pass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9DAA516E1EDDBB3200DFC539 /* Pass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8499D8851D0054A8004B5B37 /* Pass.framework */; };
 		9DAA51701EDDBB4800DFC539 /* Pass.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8499D8851D0054A8004B5B37 /* Pass.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B8AD58F68C72DD4F0FB4E1C1 /* Pods_PassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C1051E8CBAADEDB2C237DA /* Pods_PassTests.framework */; };
 		F43259DF1FAFD39200C29C8B /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43259DE1FAFD39200C29C8B /* Pass.swift */; };
 		F43259E11FB2B4E700C29C8B /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43259E01FB2B4E700C29C8B /* QRCodeViewController.swift */; };
 		F4B78F921FA1C8840009942B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B78F911FA1C8840009942B /* Colors.swift */; };
@@ -93,7 +92,6 @@
 		9DAA51541EDDBAD700DFC539 /* Pass-DemoObjc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pass-DemoObjc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFBC3DC598135562241C17CF /* Pods-PassTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassTests/Pods-PassTests.release.xcconfig"; sourceTree = "<group>"; };
 		BE2694003B18638CAA2E9EF4 /* Pods-Pass-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pass-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pass-Demo/Pods-Pass-Demo.release.xcconfig"; sourceTree = "<group>"; };
-		E4C1051E8CBAADEDB2C237DA /* Pods_PassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43259DE1FAFD39200C29C8B /* Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
 		F43259E01FB2B4E700C29C8B /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
 		F4B78F911FA1C8840009942B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8AD58F68C72DD4F0FB4E1C1 /* Pods_PassTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +141,6 @@
 				8676581830D20C068780D639 /* Pods_Pass.framework */,
 				7E5C350EB8573A3423D91E74 /* Pods_Pass_Demo.framework */,
 				482AC0C13F18DC05EDA5CE70 /* Pods_Pass_DemoObjc.framework */,
-				E4C1051E8CBAADEDB2C237DA /* Pods_PassTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
