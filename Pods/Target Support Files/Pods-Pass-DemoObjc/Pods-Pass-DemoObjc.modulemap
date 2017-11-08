@@ -1,0 +1,6 @@
+framework module Pods_Pass_DemoObjc {
+  umbrella header "Pods-Pass-DemoObjc-umbrella.h"
+
+  export *
+  module * { export * }
+}
