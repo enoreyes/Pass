@@ -7,11 +7,7 @@ target 'Pass' do
 
   # Pods for Pass
 
-pod 'FoldingCell'
-pod ‘Firebase/Core’
-pod ’Firebase/Auth’
-pod ’Firebase/Database’
-pod ’Firebase/Storage’
+
 
   target 'PassTests' do
     inherit! :search_paths
@@ -25,6 +21,12 @@ target 'Pass-Demo' do
   use_frameworks!
 
   # Pods for Pass-Demo
+
+pod 'FoldingCell'
+pod ‘Firebase/Core’
+pod ’Firebase/Auth’
+pod ’Firebase/Database’
+pod ’Firebase/Storage’
 
 end
 

@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class QRCodeViewController: UIViewController {
 
     @IBOutlet weak var qrCode: UIImageView!

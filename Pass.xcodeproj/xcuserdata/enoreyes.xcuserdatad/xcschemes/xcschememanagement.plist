@@ -16,6 +16,8 @@
 		</dict>
 		<key>FoldingCell.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
@@ -31,18 +33,32 @@
 		</dict>
 		<key>Pass-DemoObjc.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>11</integer>
 		</dict>
 		<key>PassTests.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>12</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>8498513B1C5639F9006FA400</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>9D57F31B1EDC7A6F0004599F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DAA51531EDDBAD700DFC539</key>
 		<dict>
 			<key>primary</key>
 			<true/>
