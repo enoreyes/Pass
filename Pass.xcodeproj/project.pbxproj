@@ -23,6 +23,7 @@
 		CCCD978508D8A29CD0EBA6C9 /* Pods_Pass_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E5C350EB8573A3423D91E74 /* Pods_Pass_Demo.framework */; };
 		F43259DF1FAFD39200C29C8B /* Pass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43259DE1FAFD39200C29C8B /* Pass.swift */; };
 		F43259E11FB2B4E700C29C8B /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43259E01FB2B4E700C29C8B /* QRCodeViewController.swift */; };
+		F43259E31FB2BCBA00C29C8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43259E21FB2BCB900C29C8B /* GoogleService-Info.plist */; };
 		F4B78F921FA1C8840009942B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B78F911FA1C8840009942B /* Colors.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		E9BB1077B1F009E383AB1341 /* Pods-Pass-DemoObjc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pass-DemoObjc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pass-DemoObjc/Pods-Pass-DemoObjc.debug.xcconfig"; sourceTree = "<group>"; };
 		F43259DE1FAFD39200C29C8B /* Pass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pass.swift; sourceTree = "<group>"; };
 		F43259E01FB2B4E700C29C8B /* QRCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeViewController.swift; sourceTree = "<group>"; };
+		F43259E21FB2BCB900C29C8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F4B78F911FA1C8840009942B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +196,7 @@
 				F43259951FAFBB2100C29C8B /* Storyboards */,
 				9D57F3251EDC7A6F0004599F /* Assets.xcassets */,
 				9D57F3271EDC7A6F0004599F /* LaunchScreen.storyboard */,
+				F43259E21FB2BCB900C29C8B /* GoogleService-Info.plist */,
 				9D57F32A1EDC7A6F0004599F /* Info.plist */,
 			);
 			path = Pass;
@@ -398,6 +401,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F43259E31FB2BCBA00C29C8B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,10 +448,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pass-Demo/Pods-Pass-Demo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -528,10 +540,18 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Pass-DemoObjc/Pods-Pass-DemoObjc-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -825,7 +845,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramotion.FoldingCell;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enoreyes.Pass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -856,7 +876,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ramotion.FoldingCell;
+				PRODUCT_BUNDLE_IDENTIFIER = com.enoreyes.Pass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
